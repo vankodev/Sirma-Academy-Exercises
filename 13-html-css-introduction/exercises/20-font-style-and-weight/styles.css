@@ -1,0 +1,33 @@
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+#paragraph-1 {
+    font-style: normal;
+    font-weight: 400;
+}
+
+#paragraph-2 {
+    font-style: normal;
+    font-weight: 700;
+}
+
+#paragraph-3 {
+    font-style: normal;
+    font-weight: 900;
+}
+
+#paragraph-4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+#paragraph-5 {
+    font-style: italic;
+    font-weight: 700;
+}
+
+#paragraph-6 {
+    font-style: italic;
+    font-weight: 900;
+}

@@ -1,0 +1,7 @@
+.container > * {
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: rgb(9, 9, 95);
+    color: white;
+    padding: 5px 10px;
+}

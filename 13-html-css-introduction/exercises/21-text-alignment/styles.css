@@ -1,0 +1,27 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#paragraph-1 {
+    text-align: center;
+}
+
+#paragraph-2 {
+    text-align: end;
+}
+
+#paragraph-3 {
+    text-align: justify
+}
+
+#paragraph-4 {
+    text-align: start;
+}
+
+#paragraph-5 {
+    text-align: right;
+}
+
+#paragraph-6 {
+    text-align: left;
+}

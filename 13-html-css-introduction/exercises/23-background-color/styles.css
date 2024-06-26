@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(160, 213, 230);
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(62, 152, 208, 0.7);
+}
+
+.bg-flag {
+    width: 500px;
+    box-shadow: 0 0 16px 4px rgba(62, 152, 208, 0.7);
+}
+
+.bg-flag > * {
+    width: 100%;
+    height: 100px;
+}
+
+.bg-flag .white {
+    background-color: white;
+}
+
+.bg-flag .green {
+    background-color: green;
+}
+
+.bg-flag .red {
+    background-color: red;
+}

@@ -1,0 +1,27 @@
+p {
+    font-size: 18px;
+}
+
+#paragraph-1 {
+    line-height: 0.75;
+}
+
+#paragraph-2 {
+    line-height: 1;
+}
+
+#paragraph-3 {
+    line-height: 1.25;
+}
+
+#paragraph-4 {
+    line-height: 1.5;
+}
+
+#paragraph-5 {
+    line-height: 1.75;
+}
+
+#paragraph-6 {
+    line-height: 2;
+}

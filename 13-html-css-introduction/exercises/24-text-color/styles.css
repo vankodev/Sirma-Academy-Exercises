@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(152, 210, 252);
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    color: rgb(0, 118, 0);
+}
+
+.red {
+    color: rgb(195, 1, 1);
+}
