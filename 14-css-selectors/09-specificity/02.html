@@ -1,0 +1,25 @@
+<!-- Apply both a class and an ID selector to the same element and see which style takes precedence. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Specificity Exercise</title>
+        <style>
+            #unique {
+                /* Style for ID selector */
+                color: orange;
+                font-weight: bold;
+            }
+
+            .highlight {
+                /* Style for class selector */
+                color: purple;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="unique" class="highlight">This is a paragraph.</p>
+    </body>
+</html>

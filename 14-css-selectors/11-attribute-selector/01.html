@@ -1,0 +1,45 @@
+<!-- Style input elements based on their type attribute. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute Selector Exercise</title>
+        <style>
+            input[type='text'] {
+                /* Style for text input */
+                border: 2px solid blue;
+                font-size: 20px;
+                color: blue;
+            }
+
+            input[type='text']:focus {
+                /* outline-color: cyan;
+                outline-style: solid;
+                outline-width: 2px; */
+                outline: 2px solid cyan;
+            }
+
+            input[type='text']::placeholder {
+                color: lightblue;
+                font-size: 20px;
+            }
+
+            input[type='submit'] {
+                /* Style for submit input */
+                border: 2px solid purple;
+                background-color: transparent;
+                color: purple;
+                font-size: 20px
+            }
+
+            input[type='submit']:active {
+                outline: 2px solid pink;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="Text input" />
+        <input type="submit" value="Submit" />
+    </body>
+</html>

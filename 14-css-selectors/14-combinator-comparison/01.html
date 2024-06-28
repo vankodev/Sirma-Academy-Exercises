@@ -1,0 +1,44 @@
+<!-- Compare descendant combinator and child combinator. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Combinator Comparison Exercise</title>
+        <style>
+            div p {
+                /* Style for descendant combinator */
+                background-color: lightblue;
+            }
+
+            div > p {
+                /* Style for child combinator */
+                border: 2px solid blue;
+            }
+
+            .top p {
+                background-color: lightgreen;
+                border: none;
+            }
+
+            .top > p {
+                border: 2px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Descendant</p>
+            <div>
+                <p>Child</p>
+            </div>
+        </div>
+        
+        <div class="top">
+            <p>Descendant</p>
+            <div>
+                <p>Child</p>
+            </div>
+        </div>
+    </body>
+</html>

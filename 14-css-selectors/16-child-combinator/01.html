@@ -1,0 +1,23 @@
+<!-- Use a child combinator to style direct children of a div element. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Child Combinator Exercise</title>
+        <style>
+            div > p {
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Direct child of div</p>
+            <div>
+                <p>Nested child</p>
+            </div>
+        </div>
+    </body>
+</html>
