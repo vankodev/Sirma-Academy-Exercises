@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Advanced Responsive Design</title>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #151a27;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            header,
+            footer {
+                padding: 10px 0;
+                color: white;
+                background-color: #2d3a55;
+                text-align: center;
+            }
+
+            .section {
+                padding: 20px;
+                background-color: #c9d4eb;
+                border: 1px solid #8c99b4;
+                border-radius: 8px;
+                text-align: center;
+            }
+
+            nav {
+                padding: 10px;
+                color: white;
+                background-color: #3a4763;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                display: none;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .container {
+                flex-grow: 1;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-content: start;
+            }
+
+            @media (min-width: 600px) and (max-width: 899px) {
+                nav {
+                    display: flex;
+                }
+            }
+
+            @media (min-width: 900px) and (max-width: 1399px) {
+                body {
+                    margin-left: 220px;
+                }
+
+                nav {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    height: 100vh;
+                    width: 200px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-content: start;
+                }
+
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (min-width: 1400px) {
+                nav {
+                    display: flex;
+                }
+
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Advanced Responsive Design</h1>
+        </header>
+        <nav>
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+            <a href="#section4">Section 4</a>
+        </nav>
+        <div class="container">
+            <div id="section1" class="section">Section 1</div>
+            <div id="section2" class="section">Section 2</div>
+            <div id="section3" class="section">Section 3</div>
+            <div id="section4" class="section">Section 4</div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Advanced Responsive Design</p>
+        </footer>
+    </body>
+</html>
