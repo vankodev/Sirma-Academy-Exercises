@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Highlight Words</title>
+    </head>
+    <body>
+        <a
+            href="#"
+            onmouseover="highlightWords()"
+            onmouseleave="removeHighlight()"
+            >link</a
+        >
+
+        <p>
+            <span class="highlight">We</span> have just started
+            <span class="highlight">this</span> section for the users (beginner
+            to intermediate) who <span class="highlight">want</span> to work
+            with <span class="highlight">various</span> JavaScript problems and
+            write scripts online to <span class="highlight">test</span> their
+            JavaScript <span class="highlight">skill</span>.
+        </p>
+
+        <script>
+            const wordElements = document.querySelectorAll('.highlight');
+
+            function highlightWords() {
+                wordElements.forEach((element) => {
+                    element.style.fontWeight = 'bold';
+                    element.style.color = 'blue';
+                });
+            }
+
+            function removeHighlight() {
+                wordElements.forEach((element) => {
+                    element.style.fontWeight = 'normal';
+                    element.style.color = 'black';
+                });
+            }
+        </script>
+    </body>
+</html>

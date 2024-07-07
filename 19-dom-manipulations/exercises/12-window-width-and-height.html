@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Window with and height</title>
+    </head>
+    <body>
+        <h3>Window dimensions:</h3>
+        <p>Width: <span id="width"></span></p>
+        <p>Height: <span id="height"></span></p>
+
+        <script>
+            function getDimensions() {
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+
+                const widthElement = document.getElementById('width');
+                const heightElement = document.getElementById('height');
+
+                widthElement.innerText = width;
+                heightElement.innerHTML = height;
+            }
+
+            getDimensions();
+
+            window.addEventListener('resize', getDimensions);
+        </script>
+    </body>
+</html>

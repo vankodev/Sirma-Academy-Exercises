@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Create Table</title>
+        <style type="text/css">
+            body {
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="myTable" border="1"></table>
+        <br />
+        <form>
+            <div>
+                <label for="row">Row: </label>
+                <input type="number" id="row" name="row" value="1" />
+            </div>
+            <div>
+                <label for="column">Column: </label>
+                <input type="number" id="column" name="column" value="1" />
+            </div>
+            <input
+                type="button"
+                onclick="createTable()"
+                value="Create the table"
+            />
+        </form>
+
+        <script>
+            function createTable() {
+                const row = document.getElementById('row').value;
+                const column = document.getElementById('column').value;
+
+                const tableBodyElement = document.querySelector('#myTable');
+                tableBodyElement.innerHTML = '';
+
+                for (let i = 0; i < row; i++) {
+                    const rowElement = document.createElement('tr');
+
+                    for (let j = 0; j < column; j++) {
+                        const tdElement = document.createElement('td');
+                        tdElement.textContent = `Row${i + 1} cell${j + 1}`;
+                        rowElement.appendChild(tdElement);
+                    }
+
+                    tableBodyElement.appendChild(rowElement);
+                }
+            }
+        </script>
+    </body>
+</html>
